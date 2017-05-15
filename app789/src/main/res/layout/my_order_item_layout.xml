@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <TextView
+        android:id="@+id/number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="13sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="订单编号为：201705041425"/>
+
+    <TextView
+        android:id="@+id/ntotal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/darker_gray"
+        android:text="总价：￥23333"/>
+    </RelativeLayout>
+
+    <com.w4lle.library.NineGridlayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/iv_ngrid_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:id="@+id/buy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/bigRedButton"
+        android:layout_gravity="right"
+        android:text="再次购买"/>
+
+</LinearLayout>

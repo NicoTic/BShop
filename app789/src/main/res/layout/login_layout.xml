@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cniao5.com.admin.widget.CnToolbar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/icon_back_32px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <cniao5.com.admin.widget.ClearEditText.ClearEditText
+            android:id="@+id/textPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phpne_edit_icon"
+            android:drawablePadding="20dp"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="17sp"
+            style="@style/editText_base">
+            </cniao5.com.admin.widget.ClearEditText.ClearEditText>
+
+        <View style="@style/line_vertical"/>
+
+        <cniao5.com.admin.widget.ClearEditText.ClearEditText
+            android:id="@+id/textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_password_edit_icon"
+            android:drawablePadding="20dp"
+            android:hint="请输入登录密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="17sp"
+            style="@style/editText_base">
+        </cniao5.com.admin.widget.ClearEditText.ClearEditText>
+
+        <View style="@style/line_vertical"/>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登 录"
+        android:layout_marginTop="30dp"
+        android:layout_margin="20dp"
+        style="@style/bigRedButton"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textViewLinkRegist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:text="No accpunt yet ? Create one"
+        android:textSize="16sp">
+    </android.support.v7.widget.AppCompatTextView>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <cniao5.com.admin.widget.CnToolbar
+        android:id="@+id/pay_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowSearchView="false"
+        app:navigationIcon="@drawable/icon_back_32px"
+        app:contentInsetEnd="56dp"
+        app:title="支付结果"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_view_block">
+
+        <cniao5.com.admin.custom.AlipaySuccessView
+            android:id="@+id/successview"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/bigRedButton"
+        android:layout_marginTop="15dp"
+        android:text="PAY"/>
+
+
+
+</LinearLayout>

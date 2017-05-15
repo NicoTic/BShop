@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">DouBanDemo</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <!-- 侧滑菜单的标题 -->
+    <string name="nav_home">今日精选</string>
+    <string name="nav_photos">图书推荐</string>
+    <string name="nav_movies">热门电影</string>
+    <string name="nav_notifications">我的喜欢</string>
+    <string name="nav_settings">设置</string>
+
+    <string name="nav_about_us">夜间模式</string>
+    <string name="privacy_policy">关于我们</string>
+
+    <!-- 当侧滑菜单项被选中的时候的Toolbar标题 -->
+    <string-array name="nav_item_activity_titles">
+        <item>今日精选</item>
+        <item>图书推荐</item>
+        <item>热门电影</item>
+        <item>我的喜欢</item>
+        <item>设置</item>
+    </string-array>
+
+    <!-- actionBar上菜单的标题 -->
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+
+    <!-- toolbar菜单标题 -->
+    <string name="menu_search">Menu Search</string>
+    <string name="menu_notifications">Menu Notification</string>
+
+    <!-- 电影榜单分类 -->
+    <string name="top">豆瓣Top250</string>
+    <string name="weekly_parise">口碑榜</string>
+    <string name="new_movie">新片榜</string>
+    <string name="ticket">票房榜</string>
+
+    <!-- 电影榜单描述 -->
+    <string name="top_descrip">8分以上好电影</string>
+    <string name="week_parise_descrip">口碑逆天电影</string>
+    <string name="new_movie_descrip">最新上映电影</string>
+    <string name="ticket_office_descrip">票房最高排名</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+
+
+    <string name="comment">短评</string>
+
+</resources>

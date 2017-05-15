@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:text="欢迎加入豆角"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/regist_phone_Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:hint="请输入邮箱/手机号"
+        android:textColorHint="@android:color/darker_gray">
+    </android.support.v7.widget.AppCompatEditText>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/regist_password_Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="请输入密码"
+        android:textColorHint="@android:color/darker_gray">
+    </android.support.v7.widget.AppCompatEditText>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/regist_username_Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_username"
+        android:hint="请输入昵称"
+        android:textColorHint="@android:color/darker_gray">
+    </android.support.v7.widget.AppCompatEditText>
+
+  <Button
+      android:id="@+id/nextButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="下一步"
+      android:background="@drawable/next_button_shape"/>
+
+
+</LinearLayout>

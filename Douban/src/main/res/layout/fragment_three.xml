@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/page_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edebeb"
+    android:gravity="center"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movies_Recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

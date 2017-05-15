@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <example.com.custom.DetailToolbar
+        android:id="@+id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/icon_back_32px"
+        app:title="短评">
+        </example.com.custom.DetailToolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_recycler"
+        android:layout_below="@id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/add_comment_background"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/add_coment_editText"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/MyEditText"
+            android:layout_weight="0.8"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/submit_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:background="@drawable/icon_add_comment_button"
+            android:text="提交"/>
+    </LinearLayout>
+
+</RelativeLayout>

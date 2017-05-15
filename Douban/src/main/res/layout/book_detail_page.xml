@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <example.com.custom.DetailToolbar
+        android:id="@+id/book_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/icon_back_32px"
+        app:shareButtonIcon="@drawable/ic_action_share"
+        app:likeButtonIcon = "@drawable/ic_action_like"
+        app:commentButtonIcon="@drawable/ic_action_comment">
+    </example.com.custom.DetailToolbar>
+
+    <ProgressBar
+        android:id="@+id/book_detail_page_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_detail_toolbar"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:background="@color/colorPrimary"/>
+
+    <WebView
+        android:id="@+id/fragment_book_page_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/book_detail_page_progress_bar"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

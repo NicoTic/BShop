@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/searchback_contactlist"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ProgressBar
+                android:id="@+id/search_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/new_search_select"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toLeftOf="@id/search_layout"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/et_member_search_input_bg"
+            android:hint=" 搜索"
+            android:imeOptions="actionSearch"
+            android:lines="1"
+            android:maxLength="24"
+            android:paddingLeft="14dp"
+            android:singleLine="true"
+            android:textColor="#080808"
+            android:textColorHint="#999999"
+            android:textSize="15sp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/search_text_clear_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/search_et"
+            android:layout_centerVertical="true"
+
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:background="@mipmap/icon_jw_clear_btn"
+            >
+        </ImageView>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

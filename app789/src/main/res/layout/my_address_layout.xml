@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cniao5.com.admin.widget.CnToolbar
+        android:id="@+id/address_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        app:title="我的位置"
+        app:navigationIcon="@drawable/icon_back_32px">
+        </cniao5.com.admin.widget.CnToolbar>
+
+    <include
+        layout="@layout/new_search_layout"/>
+
+
+
+    <com.amap.api.maps2d.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/toolbar_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"/>
+
+    <ImageButton
+        android:id="@+id/toolbar_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/toolbar_share"
+        android:visibility="visible"
+        android:paddingRight="20dp"
+        android:layout_marginRight="20dp"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"/>
+
+    <ImageButton
+        android:id="@+id/toolbar_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/toolbar_like"
+        android:visibility="visible"
+        android:paddingRight="20dp"
+        android:layout_marginRight="20dp"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"/>
+
+</RelativeLayout>

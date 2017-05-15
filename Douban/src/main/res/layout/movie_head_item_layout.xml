@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp"
+        android:layout_margin="40dp"
+        app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/movie_image"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/movie_cart"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_image"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:text="豆瓣 Top250"/>
+
+            <TextView
+        android:id="@+id/movie_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_cart"
+        android:layout_centerInParent="true"
+        android:text="8分以上好电影"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        />
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+

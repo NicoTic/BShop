@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="windowActionBar">false</item>
+        <!-- 隐藏标题栏 -->
+        <item name="windowNoTitle">true</item>
+
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="search_view">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <item name="android:background">@drawable/selector_search_view</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">4dp</item>
+
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="line">
+        <item name="android:background">@color/bg_color</item>
+    </style>
+    <style name="line_vertical" parent="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+
+
+
+    </style>
+
+    <style name="line_horizontal" parent="line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <item name="android:layout_gravity">center_horizontal</item>
+
+    </style>
+
+    <style name="customCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox</item>
+    </style>
+
+    <style name="bigRedButton" parent="@style/bigButton">
+        <item name="android:background">@drawable/big_red_button2</item>
+    </style>
+
+    <style name="bigButton">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- 登陆编辑框 -->
+    <style name="editText_base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">#D3D3D3</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="radioButton">
+        <item name="android:background">@drawable/rb_pay</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+</resources>

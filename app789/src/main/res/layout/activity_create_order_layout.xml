@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <cniao5.com.admin.widget.CnToolbar
+        android:id="@+id/order_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/icon_back_32px"
+        app:title="填写订单">
+        </cniao5.com.admin.widget.CnToolbar>
+
+    <LinearLayout
+        android:id="@+id/main_edit"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/address_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:padding="16dp"
+            android:background="@drawable/select_address_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:text="翻不完的夏目帐"/>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:maxLines="1"
+                    android:textSize="15sp"
+                    android:text="湖南省长沙市天心区韶山南路498号"/>
+                </LinearLayout>
+
+            <ImageView
+                android:id="@+id/to_address_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_to_address"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:padding="16dp"
+            android:background="@drawable/select_address_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true">
+                <TextView
+                    android:id="@+id/txt_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:text="订单列表"
+                    />
+
+                <TextView
+                    android:id="@+id/order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:maxLines="1"
+                    android:textSize="15sp"
+                    android:text="gerana20170503"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/to_order_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_to_address"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_edit"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/select_address_background"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:text="支付方式"/>
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/selector_list_item"
+            android:focusable="true"
+            android:clickable="true"
+            android:tag="alipay">
+
+            <ImageView
+                android:id="@+id/icon_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_alipay_72"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon_alipay"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="支持有支付宝，网银用户使用"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rb_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@style/radioButton"
+                android:checked="true"
+                android:clickable="false">
+                </RadioButton>
+        </RelativeLayout>
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_weixinpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/selector_list_item"
+            android:focusable="true"
+            android:clickable="true"
+            android:tag="wx">
+
+            <ImageView
+                android:id="@+id/icon_weixinpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_wechat_72"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon_weixinpay"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="支持微信钱包付款"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rb_weixinpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@style/radioButton">
+            </RadioButton>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:background="#90000000">
+
+
+            <TextView
+                android:id="@+id/txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="实付： ￥23333"/>
+
+            <Button
+                android:id="@+id/create_order_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/bigRedButton"
+                android:text="提交订单"/>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

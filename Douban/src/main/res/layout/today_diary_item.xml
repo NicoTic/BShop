@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@color/line_color"
+        android:clickable="true"
+        app:cardCornerRadius="3dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/today_diary_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="当我在跑步的时候我都在想些什么？"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/today_diary_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentRight="true"/>
+            <TextView
+                android:id="@+id/today_diary_commary"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/today_diary_image"
+                android:text="1988向我们展现的是一场27年前的生活百态，一场27年前的爱情故事，这注定了它的爱情观带着缓慢的古木心说过，从前的爱情慢，一生只够爱一个人，副标题告诉我们我最后的爱是家人。 电视剧是浅薄的文化产品，也是艺术眼中的低端产品，
+                "/>
+
+                </RelativeLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

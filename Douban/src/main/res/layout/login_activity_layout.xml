@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/login_phone_Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:hint="请输入邮箱/手机号"
+        android:textColorHint="@android:color/darker_gray">
+        </android.support.v7.widget.AppCompatEditText>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/login_password_Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="请输入密码"
+        android:textColorHint="@android:color/darker_gray">
+    </android.support.v7.widget.AppCompatEditText>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/next_button_shape"
+        android:text="登录"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/to_forget_PasswText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="忘记密码">
+        </android.support.v7.widget.AppCompatTextView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/to_regist_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="前往注册">
+        </android.support.v7.widget.AppCompatTextView>
+        </RelativeLayout>
+
+</LinearLayout>

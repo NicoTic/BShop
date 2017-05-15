@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/first"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="@string/nav_home"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@mipmap/ic_photo_library_black_24dp"
+            android:title="@string/nav_photos" />
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@mipmap/ic_local_movies_black_24dp"
+            android:title="@string/nav_movies" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@mipmap/ic_notifications_black_24dp"
+            android:title="@string/nav_notifications" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="@string/nav_settings" />
+    </group>
+
+    <group
+        android:id="@+id/second"
+        android:checkableBehavior="single">
+            <item xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/night_model"
+                android:icon="@drawable/ic_night_icon"
+                android:actionLayout="@layout/action_view_switch"
+                android:title="@string/nav_about_us"
+                app:showAsAction="always"/>
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/ic_nonet_icon"
+                android:title="@string/privacy_policy" />
+    </group>
+</menu>

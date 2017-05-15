@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/sentUser_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/user_name_textview"
+        style="@style/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/sentUser_portrait"
+        tools:text="ceshi neirong "/>
+
+    <TextView
+        android:id="@+id/user_comment_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/user_name_textview"
+        android:layout_toRightOf="@id/sentUser_portrait"
+        android:layout_marginTop="50dp"
+
+        tools:text="震惊！1996年的椰树果汁广告居然是这样的！"/>
+
+</RelativeLayout>

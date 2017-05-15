@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#009688</color>
+
+    <color name="notificationCircle">#45bf7b</color>
+    <color name="time_text_black">#848484</color>
+    <color name="list_item_top_grey">#c3c3c3</color>
+    <color name="line_color">#e1e1e1</color>
+    <color name="line_color_efeff4">#efeff4</color>
+    <color name="color_dedfe0">#dedfe0</color>
+
+    <color name="orange">#fda737</color>
+    <color name="green">#45bf7b</color>
+    <color name="blue">#4a90e2</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <!-- colors for night mode -->
+    <color name="colorPrimaryNight">#4c4c4c</color>
+    <color name="colorPrimaryDarkNight">#212121</color>
+    <color name="colorAccentNight">#607D8B</color>
+    <color name="grey">#303030</color>
+
+    <color name="windowBackgroundDay">#f4f4f6</color>
+    <color name="windowBackgroundNight">#33343b</color>
+
+    <!-- 电影购票按钮 -->
+    <color name="grey_btn_color_disable">#7fd8d8d8</color>
+    <color name="grey_btn_color_pressed">#ffd8d8d8</color>
+
+    <color name="textColor">#FF000000</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColorPrimary">#ff000000</color>
+    <color name="colorBackground">#ffffff</color>
+
+</resources>

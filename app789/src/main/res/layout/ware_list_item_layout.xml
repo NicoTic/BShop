@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2dp"
+    app:cardBackgroundColor="#fff"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:padding="5dp"
+        >
+
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@null"
+            android:id="@+id/ware_item_thumile"
+            android:layout_alignParentLeft="true"
+            />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/drawee_view">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:textSize="20sp"
+                android:maxLines="3"
+                android:textColor="@color/gray"
+                android:text="四海八荒男巫阿弥托覅"/>
+
+            <View
+                style="@style/line_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bigRedButton"
+                    android:layout_marginTop="20dp"
+                    android:text="立即购买"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/crimson"
+                android:text="5555.77"
+                android:layout_marginTop="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="150dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

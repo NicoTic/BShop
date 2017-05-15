@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DetailToolbar">
+
+    <attr name="shareButtonIcon" format="reference"/>
+    <attr name="likeButtonIcon" format="reference"/>
+    <attr name="commentButtonIcon" format="reference"/>
+
+    </declare-styleable>
+
+    <attr name="text_color" format="color|reference"/>
+    <attr name="backgroundCardColor" format="color|reference"/>
+
+</resources>

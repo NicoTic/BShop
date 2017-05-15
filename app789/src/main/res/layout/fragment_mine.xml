@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="?attr/colorPrimary" >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        app:civ_border_width="2dp"
+        android:src="@mipmap/longmao"
+        app:civ_border_color="#FFFFFF"
+        />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="点击登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/detail_mine_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <RelativeLayout
+                android:id="@+id/my_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:padding="16dp"
+                android:background="@drawable/select_address_background">
+            <TextView
+                android:id="@+id/txt_my_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:drawableLeft="@drawable/ic_action_bill"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:text="我的订单"
+                android:textColor="@color/cardview_dark_background"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout
+                android:id="@+id/my_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:padding="16dp"
+                android:background="@drawable/select_address_background">
+            <TextView
+                android:id="@+id/txt_my_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:drawableLeft="@drawable/ic_action_collection"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:text="我的收藏"
+                android:textColor="@color/cardview_dark_background"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout
+                android:id="@+id/my_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:padding="16dp"
+                android:background="@drawable/select_address_background">
+            <TextView
+                android:id="@+id/txt_my_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:drawableLeft="@drawable/ic_action_addtion"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:text="我的收货地址"
+                android:textColor="@color/cardview_dark_background"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="退出登录"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
